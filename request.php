@@ -9,41 +9,46 @@
     <div class="order-form">
       <a name="request"></a>
 
-      <form id="contact" action="<?= $_SERVER['PHP_SELF']; ?>" method="post">
+      <form id="contact" action="" method="POST">
         <b>
           <p>Siuntėjo duomenys</p>
         </b>
 
-        <fieldset>Siuntėjas
-          <select id="sender" name="sender" value="<?= $sender ?>">
-            <option value="1">Fizinis asmuo</option>
-            <option value="2">Juridinis asmuo</option>
-            <span class="error"><?= $sender_error ?></span>
+        <fieldset>
+          <label for="person">
+            <input class="with-gap" id="person" name="sender" type="radio" value="<?= $sender ?>" tabindex="1">
+            <span style="font-size: 1vw;">Fizinis asmuo</span>
+          </label>
+          <label for="business">
+            <input class="with-gap" id="business" name="sender" type="radio" value="<?= $sender ?>" tabindex="2">
+            <span style="font-size: 1vw;">Juridinis asmuo</span>
+          </label>
+          <span class="error"><?= $sender_error ?></span>
           </select>
         </fieldset>
 
         <fieldset>Vardas Pavardė / Įmonės pavadinimas
-          <input placeholder="" type="text" tabindex="1" name="name" value="<?= $name ?>" autofocus>
+          <input type="text" name="name" value="<?= $name ?>" tabindex="3">
           <span class="error"><?= $name_error ?></span>
         </fieldset>
 
         <fieldset>Elektroninis paštas
-          <input placeholder="" type="text" name="email" value="<?= $email ?>" tabindex="2">
+          <input type="text" name="email" value="<?= $email ?>" tabindex="4">
           <span class="error"><?= $email_error ?></span>
         </fieldset>
 
         <fieldset>Telefono numeris
-          <input placeholder="86" type="text" name="phone" value="<?= $phone ?>" tabindex="3">
+          <input placeholder="+370" type="text" name="phone" value="<?= $phone ?>" tabindex="5">
           <span class="error"><?= $phone_error ?></span>
         </fieldset>
 
         <fieldset>Tikslus pristatymo adresas
-          <input placeholder="Šalis, miestas, adresas" type="text" name="delivery" value="<?= $delivery ?>" tabindex="4">
+          <input placeholder="Šalis, miestas, adresas" type="text" name="delivery" value="<?= $delivery ?>" tabindex="6">
           <span class="error"><?= $delivery_error ?></span>
         </fieldset>
 
         <fieldset>Papildoma informacija
-          <textarea placeholder="Papildoma informacija" type="text" name="message" value="<?= $message ?>" tabindex="5"></textarea>
+          <textarea placeholder="Papildoma informacija" type="text" name="message" value="<?= $message ?>" tabindex="7"></textarea>
         </fieldset>
 
         <fieldset>
@@ -51,7 +56,8 @@
             <i class="material-icons right">send</i>
           </button>
         </fieldset>
-
+        
+        <div class="success"><?= $success; ?></div>
       </form>
     </div>
 

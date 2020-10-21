@@ -13,11 +13,11 @@
 </head>
 
 <body>
-    <div class="privacy-header">
+    <div class="privacy-header" >
         <img src="images/2.jpg" alt="top" style="width: 100%; height:300px; object-fit: cover;">
         <h2>Privatumo politika</h2>
     </div>
-    <div class="container" style="font-family: Montserrat; text-align: justify;">
+    <div class="container" style="font-family: Montserrat; text-align: justify; font-size: 1vw;">
         <br><br>
         <b> Bendra informacija </b>
         <br><br>

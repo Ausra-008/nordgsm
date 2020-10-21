@@ -5,6 +5,8 @@
 html {
     scroll-behavior: smooth;
     background-color: lightgray;
+    /* flex-wrap: wrap; */
+    /* display: flex; */
 }
 
 .container {
@@ -37,9 +39,9 @@ html {
 }
 
 .part-one h1 {
+    font-size: 6.5vw;
     font-family: Montserrat;
     text-align: center;
-    font-size: 100px;
     color: #636262;
     text-shadow: 3px 8px 8px #363436;
     position: absolute;
@@ -50,6 +52,7 @@ html {
 }
 
 .part-one h2 {
+    font-size: 3.5vw;
     font-family: Montserrat;
     text-align: center;
     color: #3a3434;
@@ -71,6 +74,7 @@ html {
 }
 
 .btn-large, .btn {
+    font-size: 1vw;
     background-color: #423131;
     color: lightgray;
 }
@@ -96,7 +100,7 @@ html {
 .about img {
     width: 100%;
     object-fit: cover;
-    height: 500px;
+    height: 100%;
     margin: 0;
     filter: drop-shadow(1px 4px 3px) grayscale(0.5);
 }
@@ -106,6 +110,7 @@ html {
 }
 
 .about-text {
+    font-size: 1vw;
     padding-top: 5%;
     padding-left: 10%;
     flex: 100%;
@@ -113,6 +118,7 @@ html {
 }
 
 .service-types {
+    font-size: 1vw;
     background-color: #363436;
     padding-left: 15%;
     padding-right: 15%;
@@ -166,6 +172,7 @@ html {
     background-color: #423131c7;
     display: flex;
 }
+
 .overlayFade2 {
     width: 23.5%;
     height: 87%;
@@ -183,6 +190,7 @@ html {
     background-color: #423131c7;
     display: flex;
 }
+
 .overlayFade4 {
     width: 23.5%;
     height: 87%;
@@ -223,6 +231,7 @@ html {
 }
 
 .order-part {
+    font-size: 1vw;
     display: flex;
     padding-top: 5%;
     font-family: Montserrat;
@@ -242,6 +251,26 @@ html {
 
 .error {
     color: red;
+}
+
+label {
+    color: black;
+}
+
+[type="radio"].with-gap:checked+span:before {
+    border: 2px solid #423131;
+}
+
+[type="radio"].with-gap:checked+span:after {
+    background-color: #423131;
+    border: 2px solid #423131;
+}
+
+.success {
+    color: sienna;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 .order-form {
@@ -264,11 +293,12 @@ html {
 }
 
 .contact-us h6 {
-    font-size: 15px;
+    /* font-size: 15px; */
     padding-top: 5%;
 }
 
 .business {
+    font-size: 1vw;
     padding-left: 10%;
     line-height: 1.6;
     flex: 100%;
@@ -310,6 +340,7 @@ footer ul {
 }
 
 .privacy-header h2 {
+    font-size: 3vw;
     font-family: Montserrat;
     text-align: center;
     color: #3a3434;

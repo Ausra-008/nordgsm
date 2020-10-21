@@ -1,4 +1,3 @@
-
 <footer class="page-footer" style="font-family: Montserrat;">
   <div class="container">
     <div class="row">
